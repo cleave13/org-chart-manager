@@ -4,8 +4,6 @@ SELECT * FROM department;
 -- Query all fields and records from role table
 SELECT * FROM role;
 
-SELECT * FROM employee;
-
 -- Join all tables together into a single query to show all employees and related data
 SELECT  e.id, 
         e.first_name, 
@@ -21,3 +19,19 @@ FROM employee AS e
     ON e.role_id = r.id
     LEFT JOIN department AS d
     ON r.department_id = d.id;
+
+-- Add new department name
+INSERT INTO department (name)
+VALUES ('sample department');
+
+-- Add a new role
+INSERT INTO role (title, salary, department_id)
+VALUES ('VP of Nothing', 100000, 1);
+
+-- Add a new employee
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Samir', 'Notgunnaworkhereanymore', 3, 5);
+
+-- Update an existing employee's role
+UPDATE employee SET role_id = 5
+WHERE id = 31;
