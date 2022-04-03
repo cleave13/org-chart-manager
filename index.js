@@ -22,8 +22,6 @@ const sqlQuery = (sql) => {
   }
 }
 
-
-
 // Destructure menuPrompts for easy reference
 const { viewDepts, viewRoles, viewEmps, addDept, addRole, addEmp, updateEmpRole } = prompts.menuPrompts;
 
