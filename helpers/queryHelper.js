@@ -30,24 +30,21 @@ const createDept = (deptName) => {
 // Add a new role
 const createRole = (roleTitle, salary, departmentId) => {
     const query = 
-        `INSERT INTO role (title, salary, department_id)
-        VALUES (${roleTitle}, ${salary}, ${departmentId})`;
+        `INSERT INTO role (title, salary, department_id) VALUES ('${roleTitle}', ${salary}, ${departmentId})`;
     return query;
 };
 
 // Add a new employee
 const createEmp = (firstName, lastName, roleId, managerId) => {
     const query = 
-        `INSERT INTO employee (first_name, last_name, role_id, manager_id)
-        VALUES (${firstName}, ${lastName}, ${roleId}, ${managerId})`;
+        `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('${firstName}', '${lastName}', ${roleId}, ${managerId})`;
     return query;
 };
 
 // Update an existing employee's role
 const changeRole = (empId, newRoleId) => {
     const query = 
-        `UPDATE employee SET role_id = ${newRoleId}
-        WHERE id = ${empId}`;
+        `UPDATE employee SET role_id = ${newRoleId} WHERE id = ${empId}`;
     return query;
 };
 

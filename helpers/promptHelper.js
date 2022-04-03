@@ -39,17 +39,17 @@ const newRole = [
     {
         type: 'input',
         message: 'What is the title of the new role?',
-        name: 'title',
+        name: 'roleTitle',
     },
     {
         type: 'input',
         message: 'What is the annual salary for this new role?',
-        name: 'title',
+        name: 'roleSalary',
     },
     {
         type: 'input',
         message: 'What department does this role belong to?',
-        name: 'title',
+        name: 'roleDept',
     }
 ];
 
@@ -57,23 +57,36 @@ const newEmp = [
     {
         type: 'input',
         message: `Enter the employee's first name`,
-        name: 'title',
+        name: 'empFirst',
     },
     {
         type: 'input',
         message: `Enter the employee's last name`,
-        name: 'title',
+        name: 'empLast',
     },
     {
         type: 'input',
         message: `What is this employee's role?`,
-        name: 'title',
+        name: 'empRole',
     },
     {
         type: 'input',
         message: `Who does this employee report to?`,
-        name: 'title',
+        name: 'empManager',
     },
 ];
 
-module.exports = { menuPrompts, menu, newDept, newRole, newEmp }
+const changeRole = [
+    {
+        type: 'input',
+        message: `Which employee would you like to change?`,
+        name: 'affectedEmp',
+    },
+    {
+        type: 'input',
+        message: `What is their new role?`,
+        name: 'empNewRole',
+    },
+]
+
+module.exports = { menuPrompts, menu, newDept, newRole, newEmp, changeRole }
