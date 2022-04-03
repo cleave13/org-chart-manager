@@ -33,6 +33,8 @@ Selecting one of these options will either display a table of returned records (
 
 All operations should contain detialed prompts to complete the required information.
 
+The following [video tutorial](https://drive.google.com/file/d/1JXi9LkGJLXE2DcPPgxf35biw2os1_uSx/view) shows the deployed application in action.
+
 ## License
 
 This project is licensed under the terms of the [MIT license](https://choosealicense.com/licenses/mit/).
