@@ -79,7 +79,7 @@ const displayChoices = () => {
             break;
 
         default:
-          break;
+          process.exit();
       }
     })
 }
